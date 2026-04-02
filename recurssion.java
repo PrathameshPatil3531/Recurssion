@@ -23,10 +23,21 @@ public class recurssion {
       return fnm1 + fnm2;
     }
 
+    public static int frndparing(int n){
+      if(n ==1 || n==2){
+        return n;
+      }
+      int single = frndparing(n-1);
+      int pair = frndparing(n-2);
+      return single + (n-1)*pair;
+    }
+
     public static void main (String args[]){
 
-        System.out.println(tiling(4));
+        // System.out.println(tiling(4));
+        System.out.println(frndparing(3));
 
     }
+    
     
 }
