@@ -25,7 +25,7 @@ public class recurssion {
 
     public static void main (String args[]){
 
-        System.out.println(tiling(5));
+        System.out.println(tiling(4));
 
     }
     
